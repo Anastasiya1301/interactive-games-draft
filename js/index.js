@@ -25,4 +25,7 @@ switch (operator) {
       alert("Будьте уважні! Введіть правильний оператор");
 };
 
+const num1 = document.querySelector(".input-number-calculate-1");
+const operators = document.querySelector(".")
 
+const num2 = document.querySelector(".input-number-calculate-2");

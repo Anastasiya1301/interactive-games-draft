@@ -1,3 +1,44 @@
-ul{
-    list-style: none;
+.title {
+    margin-bottom: 36px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--primary-color);
+    text-align: center;
+}
+.title::before {
+  content: "";
+    display: block;
+    width: 536px;
+    height: 1px;
+    margin: 0 auto 36px;
+    background-color: var(--primary-color);
+}
+section {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+.title-calculate{
+color: #000;
+}
+ul {
+  list-style: none;
+}
+.input-number-calculate {
+  border-radius: 20px;
+  padding: 10px 20px;
+  width: 135px;
+  height: 35px;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+  background: #d7d7d7;
+}
+.button-calculate {
+  color: white;
+  margin: 0;
+  border-radius: 20px;
+  padding: 5px 10px;
+  width: 25px;
+  height: 25px;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+  background: #000;
 }
