@@ -10,23 +10,35 @@
     <script type="module" src="./js/index.js"></script>
 
     <main class="main">
+        <div class="container">
         <h2 class="title title-calculate">Калькулятор</h2>
         <section class="section-calculate">
+            <div class="container-calculate">
             <input type="text" placeholder="Введіть число" class="input-number-calculate input-number-calculate-1">
-            <button class="button-calculate">+</button>
-            <button class="button-calculate">-</button>
-            <button class="button-calculate">*</button>
-            <button class="button-calculate">/</button>
+            <ul class="calculate-list">
+                <li class="calculate-item">
+                    <button class="button-calculate">+</button>
+                </li>
+                <li class="calculate-item">
+                    <button class="button-calculate">-</button>
+                </li>
+                <li class="calculate-item">
+                    <button class="button-calculate">*</button>
+                </li>
+                <li class="calculate-item">
+                    <button class="button-calculate">/</button>
+                </li>
+            </ul>
             <input type="text" placeholder="Введіть число" class="input-number-calculate input-number-calculate-2">
             <button class="button-calculate">=</button>
             <input type="text" placeholder="Результат" class="input-number-result">
+            </div>
             </section>
+            </div>
     </main>
     <footer class="footer">
         <div class="container">
-    <svg class="footer-svg">
-        <use href="#"></use>
-    </svg>
+    <a href=""><img src="./svg/Group 128 1.svg" alt=""></a>
     <ul class="footer-contacts-list">
         <li class="footer-contacts-item">Тел:
             <a href="tel:+38(123)4567890" class="footer-contacts-link"> +38 (123) 456 78 90</a>
@@ -47,12 +59,12 @@
     <div class="footer-form-container">
     <form>
     <label for="email" class="footer-label">
-    <input type="email" name="email" placeholder="Ваша ел. адреса...">
+    <input type="email" name="email" placeholder="Ваша ел. адреса..." class="placeholder-email-footer">
     </label>
     <button class="footer-button" type="button">Підписатись</button>
     </form>
-    <p class="footer-text">*Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті</p>
     </div>
+    <p class="footer-text">*Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті</p>
     </div>
 </footer>
 </body>

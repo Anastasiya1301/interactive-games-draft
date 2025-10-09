@@ -1,28 +1,56 @@
+.container{
+  width: 1090px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .title {
-    margin-bottom: 36px;
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 16px;
-    color: var(--primary-color);
-    text-align: center;
+  margin-bottom: 36px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--primary-color);
+  text-align: center;
 }
 .title::before {
   content: "";
-    display: block;
-    width: 536px;
-    height: 1px;
-    margin: 0 auto 36px;
-    background-color: var(--primary-color);
+  display: block;
+  width: 536px;
+  height: 1px;
+  margin: 0 auto 36px;
+  background-color: var(--primary-color);
 }
 section {
   padding-top: 36px;
   padding-bottom: 36px;
 }
-.title-calculate{
-color: #000;
+.container-calculate{
+  display: flex;
+  column-gap: 38px;
+  align-items: center;
+  justify-content: center;
+}
+.title-calculate {
+  color: #000;
 }
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+.calculate-list{
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+  display: flex;
+  width: 62px;
+}
+.calculate-item{
+  flex-basis: calc((100% - 10px) / 2);
 }
 .input-number-calculate {
   border-radius: 20px;
@@ -41,4 +69,62 @@ ul {
   height: 25px;
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
   background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.input-number-result {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  color: #7e7e7e;
+  border-radius: 20px;
+  padding: 10px 20px;
+  width: 118px;
+  height: 35px;
+  background: #d7d7d7;
+}
+.footer-contacts-item {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 170%;
+  color: #000;
+}
+.footer-contacts-link {
+  color: #000;
+}
+.footer-label {
+  border-radius: 20px;
+  padding: 10px 80px 10px 10px;
+  width: 204px;
+  height: 35px;
+  background: #d7d7d7;
+}
+.footer-button {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px;
+  width: 107px;
+  height: 35px;
+  background: #000;
+}
+.footer-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 6px;
+  color: #000;
+}
+.placeholder-email-footer{
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 12px;
+color: #7e7e7e;
+}
+.footer-form-container {
+  display: flex;
 }
