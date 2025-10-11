@@ -1,4 +1,4 @@
-.container{
+.container {
   width: 1090px;
   margin-left: auto;
   margin-right: auto;
@@ -25,7 +25,7 @@ section {
   padding-top: 36px;
   padding-bottom: 36px;
 }
-.container-calculate{
+.container-calculate {
   display: flex;
   column-gap: 38px;
   align-items: center;
@@ -39,17 +39,17 @@ ul {
   margin: 0;
   padding: 0;
 }
-a{
+a {
   text-decoration: none;
 }
-.calculate-list{
+.calculate-list {
   flex-wrap: wrap;
   column-gap: 10px;
   row-gap: 10px;
   display: flex;
   width: 62px;
 }
-.calculate-item{
+.calculate-item {
   flex-basis: calc((100% - 10px) / 2);
 }
 .input-number-calculate {
@@ -73,7 +73,21 @@ a{
   display: flex;
   align-items: center;
   justify-content: center;
-  
+}
+.button-equal {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 20px;
+  padding: 5px 10px;
+  width: 27px;
+  height: 25px;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .input-number-result {
   font-family: var(--font-family);
@@ -121,11 +135,11 @@ a{
   font-size: 6px;
   color: #000;
 }
-.placeholder-email-footer{
+.placeholder-email-footer {
   font-family: var(--font-family);
-font-weight: 400;
-font-size: 12px;
-color: #7e7e7e;
+  font-weight: 400;
+  font-size: 12px;
+  color: #7e7e7e;
 }
 .footer-form-container {
   display: flex;
