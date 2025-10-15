@@ -46,3 +46,7 @@ equalButton.addEventListener("click", () => {
   resultField.value = result;
 });
 
+
+//модальне вікно
+
+
