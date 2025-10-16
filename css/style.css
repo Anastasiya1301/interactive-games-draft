@@ -41,17 +41,7 @@ section {
 .title-calculate {
   color: #000;
 }
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-a {
-  text-decoration: none;
-}
-button {
-  border: none;
-}
+
 .calculate-list {
   flex-wrap: wrap;
   column-gap: 10px;
@@ -171,11 +161,13 @@ button {
 /* модальне вікно */
 
 .title-footer-modal {
+  position: relative;
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 20px;
   text-align: center;
   color: #000;
+  margin-top: 30px;
 }
 
 .footer-box {
@@ -185,5 +177,100 @@ button {
   justify-content: center;
 }
 .footer-backdrop {
-  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  opacity: 1;
+  visibility: visible;
+  z-index: 1000;
+}
+
+.footer-is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* .footer-modal-container {
+  width: 463px;
+  height: 245px;
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px 60px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  animation: modal-appear 0.4s ease;
+} */
+.footer-modal-container {
+  position: relative;
+  width: 463px;
+  height: 245px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px 60px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: modal-appear 0.4s ease;
+  overflow: hidden;
+}
+
+.svg-modal-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.svg-modal-item {
+  position: absolute;
+}
+
+.svg-modal-item img {
+  width: 35px;
+  height: 35px;
+  filter: brightness(0);
+  opacity: 0.8;
+}
+/*positions*/
+.svg-modal-item.top-left {
+  top: 69px;
+  left: 43px;
+  transform: translate(-50%, -50%);
+}
+
+.svg-modal-item.top-right {
+  top: 69px;
+  right: 42px;
+  transform: translate(50%, -50%);
+}
+
+.svg-modal-item.bottom-left {
+  top: 145px;
+  left: 87px;
+  transform: translate(-50%, 50%);
+}
+
+.svg-modal-item.bottom-right {
+  bottom: 70px;
+  right: 86px;
+  transform: translate(50%, 50%);
+}
+.footer-close-modal {
+  position: absolute;
+  top:20px;
+  right:30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.footer-close-modal .svg-close-modal {
+  width: 15px;
+  height: 15px;
+  fill: #000;
 }

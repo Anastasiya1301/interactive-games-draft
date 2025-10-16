@@ -1,97 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    <script type="module" src="./js/index.js"></script>
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <main class="main">
-        <div class="container">
+      <div class="container">
         <h2 class="title title-calculate">Калькулятор</h2>
         <section class="section-calculate">
-            <div class="container-calculate">
-            <input type="text" placeholder="Введіть число" class="input-number-calculate" id="math-num1">
+          <div class="container-calculate">
+            <input
+              type="text"
+              placeholder="Введіть число"
+              class="input-number-calculate"
+              id="math-num1"
+            />
             <ul class="calculate-list">
-                <li class="calculate-item">
-                    <button class="button-calculate">+</button>
-                </li>
-                <li class="calculate-item">
-                    <button class="button-calculate">-</button>
-                </li>
-                <li class="calculate-item">
-                    <button class="button-calculate">*</button>
-                </li>
-                <li class="calculate-item">
-                    <button class="button-calculate">/</button>
-                </li>
+              <li class="calculate-item">
+                <button class="button-calculate">+</button>
+              </li>
+              <li class="calculate-item">
+                <button class="button-calculate">-</button>
+              </li>
+              <li class="calculate-item">
+                <button class="button-calculate">*</button>
+              </li>
+              <li class="calculate-item">
+                <button class="button-calculate">/</button>
+              </li>
             </ul>
-            <input type="text" placeholder="Введіть число" class="input-number-calculate" id="math-num2">
+            <input
+              type="text"
+              placeholder="Введіть число"
+              class="input-number-calculate"
+              id="math-num2"
+            />
             <button class="button-equal" id="equal">=</button>
-            <input type="text" placeholder="Результат" class="input-number-result" id="math-result">
-            </div>
-            </section>
-            </div>
+            <input
+              type="text"
+              placeholder="Результат"
+              class="input-number-result"
+              id="math-result"
+            />
+          </div>
+        </section>
+      </div>
     </main>
     <footer class="footer">
-        <div class="container footer-box">
-    <a href="#"><img src="./svg/Group 128 1.svg" alt="logo-footer"></a>
-    <ul class="footer-contacts-list">
-        <li class="footer-contacts-item">Тел:
-            <a href="tel:+38(123)4567890" class="footer-contacts-link"> +38 (123) 456 78 90</a>
-        </li>
-        <li class="footer-contacts-item"> EMail:
-            <a href="mailto:codingmagic@gmail.com" class="footer-contacts-link">codingmagic@gmail.com</a>
-        </li>
-        <li class="footer-contacts-item">Facebook:
+      <div class="container footer-box">
+        <a href="#"><img src="./svg/Group 128 1.svg" alt="logo-footer" /></a>
+        <ul class="footer-contacts-list">
+          <li class="footer-contacts-item">
+            Тел:
+            <a href="tel:+38(123)4567890" class="footer-contacts-link">
+              +38 (123) 456 78 90</a
+            >
+          </li>
+          <li class="footer-contacts-item">
+            EMail:
+            <a href="mailto:codingmagic@gmail.com" class="footer-contacts-link"
+              >codingmagic@gmail.com</a
+            >
+          </li>
+          <li class="footer-contacts-item">
+            Facebook:
             <a href="#" class="footer-contacts-link"> CodingMagic</a>
-        </li>
-        <li class="footer-contacts-item">Twitter:
+          </li>
+          <li class="footer-contacts-item">
+            Twitter:
             <a href="#" class="footer-contacts-link"> CodingMagic</a>
-        </li>
-        <li class="footer-contacts-item">Instagram:
+          </li>
+          <li class="footer-contacts-item">
+            Instagram:
             <a href="#" class="footer-contacts-link"> CodingMagic</a>
-        </li>
-    </ul>
-    <form class="footer-form">
-    <label for="email" class="footer-label">
-    <input type="email" name="email" placeholder="Ваша ел. адреса..." class="placeholder-email-footer">
-    </label>
-    <button class="footer-button" type="button">Підписатись</button>
-    <p class="footer-text">*Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті</p>
-    
-    <!--модальне вікно-->
-    <div class="footer-backdrop footer-is-hidden">
-        <button type="button" class="modal-button-close">
-            <svg class="svg-close-modal">
-            <use href="#"></use>
-        </svg>
-    </button>
-        <div class="footer-modal-container">
-            <h2 class="title-footer-modal">Дякую за підписку!</h2>
-    <ul class="svg-modal-list">
-        <li class="svg-modal-item">
-            <a href="#" class="footer-svg-modal"><img src="./svg/Group 128 1.svg" alt="logo-footer" width="30" height="30"></a>
-        </li>
-        <li class="svg-modal-item">
-            <a href="#" class="footer-svg-modal"><img src="./svg/Group 128 1.svg" alt="logo-footer" width="30" height="30"></a>
-        </li>
-        <li class="svg-modal-item">
-            <a href="#" class="footer-svg-modal"><img src="./svg/Group 128 1.svg" alt="logo-footer" width="30" height="30"></a>
-        </li>
-        <li class="svg-modal-item">
-            <a href="#" class="footer-svg-modal"><img src="./svg/Group 128 1.svg" alt="logo-footer" width="30" height="30"></a>
-        </li>
-    </ul>
-        </div>
-    </div>
-    
-    </form>
-    </div>
-</footer>
-</body>
+          </li>
+        </ul>
+        <form class="footer-form">
+          <label for="email" class="footer-label">
+            <input
+              type="email"
+              name="email"
+              placeholder="Ваша ел. адреса..."
+              class="placeholder-email-footer"
+            />
+          </label>
+          <button class="footer-button footer-open-modal" type="button">
+            Підписатись
+          </button>
+          <p class="footer-text">
+            *Підписавшись, Ви зможете ортимувати інформаццію про новинки на
+            сайті
+          </p>
+
+          <!--модальне вікно-->
+          <div class="footer-backdrop footer-is-hidden">
+            <div class="footer-modal-container">
+              <button type="button" class="footer-close-modal">
+                <svg class="svg-close-modal" width="15" height="15">
+                  <use href="./svg/Vector 234.svg"></use>
+                </svg>
+              </button>
+              <h2 class="title-footer-modal">Дякую за підписку!</h2>
+              <ul class="svg-modal-list">
+                <li class="svg-modal-item top-left">
+                  <a href="#" class="footer-svg-modal"
+                    ><img
+                      src="./svg/sword 1.svg"
+                      alt="logo-footer"
+                      width="30"
+                      height="30"
+                  /></a>
+                </li>
+                <li class="svg-modal-item top-right">
+                  <a href="#" class="footer-svg-modal"
+                    ><img
+                      src="./svg/game-development 1 (1).svg"
+                      alt="logo-footer"
+                      width="30"
+                      height="30"
+                  /></a>
+                </li>
+                <li class="svg-modal-item bottom-left">
+                  <a href="#" class="footer-svg-modal"
+                    ><img
+                      src="./svg/puzzle 1.svg"
+                      alt="logo-footer"
+                      width="30"
+                      height="30"
+                  /></a>
+                </li>
+                <li class="svg-modal-item bottom-right">
+                  <a href="#" class="footer-svg-modal"
+                    ><img
+                      src="./svg/tic-tac-toe 1.svg"
+                      alt="logo-footer"
+                      width="30"
+                      height="30"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </form>
+      </div>
+    </footer>
+    <script type="module" src="./js/index.js"></script>
+  </body>
 </html>
